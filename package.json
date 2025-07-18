@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev ",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.0",
+    "isotope-layout": "^3.0.6",
+    "nuxt": "^3.16.2",
+    "pinia": "^3.0.2",
+    "tiny-slider": "^2.9.4",
+    "vue": "^3.5.13",
+    "vue-countup-v3": "^1.4.2",
+    "vue-router": "^4.5.0",
+    "vue3-carousel": "^0.15.0",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "vue-observe-visibility": "^2.0.0-alpha.1"
+  },
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538"
+}
