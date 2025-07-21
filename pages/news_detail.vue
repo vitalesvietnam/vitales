@@ -8,6 +8,6 @@
 </template>
 <script setup>
 useHead({
-    title: 'Agrikol | News Detail'
+    title: 'Vitales | News Detail'
 });
 </script>

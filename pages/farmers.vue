@@ -9,6 +9,6 @@
 
 <script setup>
 useHead({
-    title: 'Agrikol | Farmers'
+    title: 'Vitales | Farmers'
 });
 </script>

@@ -14,6 +14,6 @@
 
 <script setup>
 useHead({
-    title: 'Agrikol | Why Choose us'
+    title: 'Vitales | Why Choose us'
 });
 </script>

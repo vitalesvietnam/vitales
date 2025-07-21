@@ -77,12 +77,13 @@
       <nav class="mobile-nav__container" :style="`display: ${mobileToggle ? 'block' : 'none'}`">
         <ul class="main-nav__navigation-box">
           <li v-for="(navItem, index) in navItems" :key="index" class="dropdown">
-            <div class="menu-holder">
+            <div v-if="navItem.children" class="menu-holder">
               {{ navItem.label }}
-              <button v-if="navItem.children" class="dropdown-btn" @click="toggleMobileSubmenu(index)">
+              <button class="dropdown-btn" @click="toggleMobileSubmenu(index)">
                 <i class="fa fa-angle-right"></i>
               </button>
             </div>
+            <NuxtLink v-else :to="navItem.to" class="mobile-nav-link">{{ navItem.label }}</NuxtLink>
             <ul v-if="navItem.children" :style="`display: ${activeMobileSubmenu === index ? 'block' : 'none'}`">
               <li v-for="(child, childIndex) in navItem.children" :key="childIndex">
                 <div v-if="child.children" class="menu-holder">
@@ -91,11 +92,11 @@
                     <i class="fa fa-angle-right"></i>
                   </button>
                 </div>
-                <NuxtLink v-else :to="child.to">{{ child.label }}</NuxtLink>
+                <NuxtLink v-else :to="child.to" class="mobile-nav-link">{{ child.label }}</NuxtLink>
                 <ul v-if="child.children"
                   :style="`display: ${activeMobileSubSubmenu === childIndex ? 'block' : 'none'}`">
                   <li v-for="(grandchild, grandIndex) in child.children" :key="grandIndex">
-                    <NuxtLink :to="grandchild.to">{{ grandchild.label }}</NuxtLink>
+                    <NuxtLink :to="grandchild.to" class="mobile-nav-link">{{ grandchild.label }}</NuxtLink>
                   </li>
                 </ul>
               </li>
@@ -135,8 +136,8 @@ const contactItems = ref([
   {
     icon: 'icon-phone-call',
     title: 'Telefoon',
-    text: '+84 867188170',
-    link: 'tel:+84867188170'
+    text: '+84 977884317',
+    link: 'tel:+84977884317'
   },
   {
     icon: 'icon-clock',
@@ -204,3 +205,67 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 </script>
+
+<style scoped>
+.mobile-nav-link {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.mobile-nav__container {
+  background: white;
+  border-top: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.mobile-nav__container .main-nav__navigation-box {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav__container .dropdown {
+  border-bottom: 1px solid #eee;
+}
+
+.menu-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  transform: rotate(90deg);
+}
+
+.mobile-nav__container ul ul {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav__container ul ul li {
+  border-bottom: 1px solid #ddd;
+}
+</style>

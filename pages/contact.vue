@@ -11,6 +11,6 @@
 
 <script setup>
 useHead({
-    title: 'Agrikol | Contact'
+    title: 'Vitales | Contact'
 });
 </script>

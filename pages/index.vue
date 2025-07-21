@@ -19,7 +19,7 @@
 
 <script setup>
 useHead({
-    title: 'Agrikol | Home 1'
+    title: 'Vitales | Home 1'
 });
 
 </script>

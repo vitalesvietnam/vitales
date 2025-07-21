@@ -9,6 +9,6 @@
 
 <script setup>
 useHead({
-    title: 'Agrikol | Cart'
+    title: 'Vitales | Cart'
 });
 </script>

@@ -9,6 +9,6 @@
 
 <script setup>
 useHead({
-    title: 'Agrikol | Gallery'
+    title: 'Vitales | Gallery'
 });
 </script>

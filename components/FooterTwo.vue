@@ -63,7 +63,7 @@
                             <div class="footer-widget_contact">
                                 <p>Lakeview City, số 9, Đường Số 19, Phường An Phú, Quận 2, 700000 Hồ Chí Minh, Vietnam</p>
                                 <a href="mailto:info@vitales.vn">info@vitales.vn</a><br>
-                                <a href="tel:+84867188170">+84 867188170</a>
+                                <a href="tel:+84977884317">+84 977884317</a>
                                 <div class="site-footer__social">
                                     <a v-for="(social, index) in socialLinks" :key="index" :href="social.url">
                                         <i :class="social.icon"></i>

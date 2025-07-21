@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: "Agrikol - Vue Nuxt Template for Agriculture Farm & Farmers",
+      title: "Vitales - European Biotechnology & Asian Agriculture",
       link: [
         {
           rel: "icon",

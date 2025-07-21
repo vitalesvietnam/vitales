@@ -17,6 +17,6 @@
 </template>
 <script setup>
 useHead({
-    title: 'Agrikol | Home 2'
+    title: 'Vitales | Home 2'
 });
 </script>

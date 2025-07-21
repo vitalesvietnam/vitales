@@ -22,7 +22,7 @@ const location = ref({
     name: 'Vitales Vietnam',
     address: 'Lakeview City, số 9, Đường Số 19, Phường An Phú, Quận 2, 700000 Hồ Chí Minh, Vietnam',
     email: 'info@vitales.vn',
-    phone: '+84 867188170',
+    phone: '+84 977884317',
 });
 </script>
 

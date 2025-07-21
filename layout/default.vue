@@ -9,7 +9,7 @@
 // No need to manually import SearchPopup unless you've disabled auto-imports
 
 useHead({
-    title: "Agrikol - Vue Nuxt Template for Agriculture Farm & Farmers"
+    title: "Vitales - European Biotechnology & Asian Agriculture"
 });
 
 // No need for manual loading handling with NuxtLoadingIndicator

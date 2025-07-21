@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="topbar-one__left">
                     <a href="mailto:info@vitales.vn"><span class="icon-message"></span>info@vitales.vn</a>
-                    <a href="tel:+84867188170"><span class="icon-phone-call"></span>+84 867188170</a>
+                    <a href="tel:+84977884317"><span class="icon-phone-call"></span>+84 977884317</a>
                 </div>
                 <div class="topbar-one__middle">
                     <NuxtLink to="/" class="main-nav__logo">

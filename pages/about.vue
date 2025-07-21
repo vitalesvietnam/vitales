@@ -10,6 +10,6 @@
 
 <script setup>
 useHead({
-    title: 'Agrikol | About'
+    title: 'Vitales | About'
 });
 </script>
